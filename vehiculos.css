@@ -4,6 +4,12 @@
     padding: 0;
 }
 
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 header {
     /* background-color: brown; */
     display: flex;
@@ -69,6 +75,18 @@ img {
     width: 100%;
 }
 
+h3 {
+    font-size: 1.5em;
+    text-align: center;
+    border-top: 2px solid green;
+    border-bottom: 2px solid green;
+    margin: 10px;
+}
+
+p {
+    font-size:x-large;
+}
+
 .uno {
     display: flex;
     min-height: 30vh;
@@ -125,4 +143,97 @@ footer a:hover {
 footer .redes a img {
     width: 30px;
     margin: 0 5px;
+}
+
+/* Estilos para dispositivos móviles pequeños */
+@media screen and (max-width: 480px) {
+    .uno {
+        background-color: lightblue;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .uno img {
+        order: 1;
+    }
+
+    .uno .lorem1 {
+        order: 2;
+    }
+
+    .dos {
+        background-color: lightblue;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    .uno {
+        background-color: rgb(204, 239, 204);
+        flex-direction: column;
+        text-align: justify;
+        font-size:x-large  ;
+    }
+
+    .uno img {
+        order: 1;
+    }
+
+    .uno .lorem1 {
+        order: 2;
+    }
+
+
+
+    .dos {
+        background-color: rgb(204, 239, 204);
+        flex-direction: column;
+        text-align: justify;
+    }
+}
+
+/* Estilos para tabletas */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .uno {
+        background-color: lightcoral;
+        flex-direction: column;
+        text-align: justify;
+    }
+
+    .uno img {
+        order: 1;
+    }
+
+    .uno .lorem1 {
+        order: 2;
+    }
+
+    .dos {
+        background-color: lightblue;
+        flex-direction: column;
+        text-align: justify;
+    }
+}
+
+/* Estilos para pantallas medianas */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .body {
+        background-color: lightgoldenrodyellow;
+    }
+}
+
+/* Estilos para pantallas grandes */
+@media screen and (min-width: 1201px) and (max-width: 1440px) {
+    .body {
+        background-color: lightgray;
+    }
+}
+
+/* Estilos para pantallas extra grandes */
+@media screen and (min-width: 1441px) {
+    .body {
+        background-color: lightpink;
+    }
 }

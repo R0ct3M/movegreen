@@ -84,14 +84,14 @@ input {
     border-radius: 4px;
 }
 
-.banner img {
+/* .banner img {
     flex-basis: 50%;
     float: left;
     padding: 0 70px 0 0 ;
-}
+} */
 
 .registro form {
-    flex-basis: 50%;
+    /* flex-basis: 100%; */
     align-items: center;
 }
 
@@ -101,8 +101,9 @@ input {
     padding-top: 200px;
     display: flex;
     flex-direction:column;
-    justify-content:left;
+    /* justify-content:left; */
     align-items: center;
+    margin-bottom: 50px;
 }
 
 footer{
@@ -126,3 +127,40 @@ div a{
     text-decoration: none;
     color: rgb(0, 0, 0);
 }
+
+/* Estilos para dispositivos móviles pequeños */
+@media screen and (max-width: 480px) {
+
+    main {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .banner {
+        width: 100%;
+        align-items: center;
+    }
+
+    form {
+        margin-bottom: 100px;
+    }
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+
+    main {
+        flex-direction: column;
+    }
+
+    .banner {
+        width: 100%;
+        align-items: center;
+    }
+
+    form {
+        margin-bottom: 100px;
+    }
+}
+  
